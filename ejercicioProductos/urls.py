@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import producto,detalles,detalles2,detalles3
+from evaluacion2.views import vistaGeneral,vista1,vista2,vista3,vista4
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,10 @@ urlpatterns = [
     path('electronica/', detalles),
     path('juguetes/', detalles2),
     path('ropa/', detalles3),
+
+    path('', vistaGeneral),
+    path('rubik1/',vista1),
+    path('rubik2/',vista2),
+    path('rubik3/',vista3),
+    path('rubik4/',vista4)
 ]

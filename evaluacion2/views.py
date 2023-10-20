@@ -3,13 +3,15 @@ from django.shortcuts import render
 def vistaGeneral(request):
 
     datos = {
-              "tipo":"Tipos De Cubos Rubik's",
+            
               "descripcion":"Se observara precios sobre 4 tipos de cubos rubik's y como las estrellas de valoracion",
-              "img":"../static/images/rubik3x3",
+              "img":"../static/images/rubik3x3.png",
               "opcion1":"1 x 1",
               "opcion2":"2 x 2",
               "opcion3":"3 x 3",
-              "opcion4":"4 x 4"
+              "ir1":"../rubik1",
+              "ir2":"../rubik2",
+              "ir3":"../rubik3"
              }
 
     return render(request, 'evaluacion2/index.html',datos)
@@ -22,7 +24,13 @@ def vista1(request):
                                Ahora podrás completar tu colección de cubos cúbicos con este completo Cubo de Rubik 1x1.""",
               "precio":"$7.000-$12.000",
               "valorado":"★★★☆☆",
-              "img":"../static/images/rubik1x1"
+              "img":"../static/images/rubik1x1.png",
+              "opcion1":"2 x 2",
+              "opcion2":"3 x 3",
+              "opcion3":"4 x 4",
+              "ir1":"../rubik2",
+              "ir2":"../rubik3",
+              "ir3":"../rubik4"
              }
 
     return render(request, 'evaluacion2/index.html',datos1)
@@ -37,7 +45,13 @@ def vista2(request):
 
               "precio":"$5.000-$9.000",
               "valorado":"★★★★☆",
-              "img":"../static/images/rubik2x2"
+              "img":"../static/images/rubik2x2.png",
+              "opcion1":"1 x 1",
+              "opcion2":"3 x 3",
+              "opcion3":"4 x 4",
+              "ir1":"../rubik1",
+              "ir2":"../rubik3",
+              "ir3":"../rubik4"
              }
 
     return render(request, 'evaluacion2/index.html',datos2)
@@ -51,7 +65,13 @@ def vista3(request):
                                por lo que no se mueven más allá de girar cuando se mueve toda esa cara.""",
               "precio":"$8.000-$13.000 (los de calidad aceptable)",
               "valorado":"★★★★★",
-              "img":"../static/images/rubik3x3"
+              "img":"../static/images/rubik3x3.png",
+              "opcion1":"1 x 1",
+              "opcion2":"2 x 2",
+              "opcion3":"4 x 4",
+              "ir1":"../rubik1",
+              "ir2":"../rubik2",
+              "ir3":"../rubik4"
              }
 
     return render(request, 'evaluacion2/index.html',datos3)
@@ -64,7 +84,13 @@ def vista4(request):
                                forman los seis centros y otras veinticuatro piezas que forman las doce aristas.""",
               "precio":"$15.000-$20.000 (los de calidad aceptable)",
               "valorado":"★★★★☆",
-              "img":"../static/images/rubik4x4"
+              "img":"../static/images/rubik4x4.png",
+              "opcion1":"1 x 1",
+              "opcion2":"2 x 2",
+              "opcion3":"3 x 3",
+              "ir1":"../rubik1",
+              "ir2":"../rubik2",
+              "ir3":"../rubik3"
              }
 
     return render(request, 'evaluacion2/index.html',datos4)
