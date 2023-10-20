@@ -21,6 +21,13 @@
             margin-left: 20%;
             margin-right: 20%;
         }
+
+        h3,p{
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
         #img1{
             width: 15%;
         }
@@ -28,15 +35,20 @@
 
 </head>
 <body>
-    <h1>Tipos De Cubos Rubik's</h1>
+    <h1>{{nombre}}</h1>
     <br>
     <h2>{{descripcion}}</h2>
+    <h2>{{descripcion2}}</h2>
     <img id="img1" src="{{img}}" alt="">
     <br>
+    <br>
+    <h3>{{precio}}</h3>
+    <p>{{valorado}}</p>
     <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <a href="{{ir1}}"><button type="button" class="btn btn-warning">Cubo Rubik {{opcion1}}</button></a>
-        <a href="{{ir2}}"><button type="button" class="btn btn-warning">Cubo Rubik {{opcion2}}</button></a>
-        <a href="{{ir3}}"><button type="button" class="btn btn-warning">Cubo Rubik {{opcion3}}</button></a>
+        <a href="{{ir1}}"><button type="button" class="btn btn-warning">{{opcion1}}</button></a>
+        <a href="{{ir2}}"><button type="button" class="btn btn-warning">{{opcion2}}</button></a>
+        <a href="{{ir3}}"><button type="button" class="btn btn-warning">{{opcion3}}</button></a>
+        <a href="{{ir4}}"><button type="button" class="btn btn-warning">{{opcion4}}</button></a>
     </div>
 
 

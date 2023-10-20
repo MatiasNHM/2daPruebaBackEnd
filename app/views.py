@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def producto(request):
-    productos = {"nombre1":"Electronica","nombre2":"Juguetes","nombre3":"Ropa"}
+    productos = {"nombre1":"Electronica","nombre2":"Juguetes","nombre3":"Ropa","opcion":"Ir a Cubos Rubiks","ir":"../"}
     return render(request, 'ejercicioProductos/index.html', productos)
 
 def detalles(request):
@@ -32,4 +32,5 @@ def detalles3(request):
                      "nombre1":"Pantalon",
                      "nombre2":"Chaqueta",
                      "nombre3":"Camisa"}
+    
     return render(request, 'ejercicioProductos/productos.html',producto_tres)
